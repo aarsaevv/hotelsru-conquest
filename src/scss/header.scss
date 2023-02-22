@@ -1,70 +1,63 @@
 .header {
-
-    &__content {
-        height: 85px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+	&__content {
+		height: 85px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 }
 
 .menu {
-    display: flex;
-    gap: 65px;
-    
-    &__link {
-        font-size: 14px;
-        color: $color-text-grey;
-    }
+	display: flex;
+	gap: 65px;
+
+	&__link {
+		font-size: 14px;
+		color: $color-text-grey;
+	}
 }
 
 .icon {
-    display: flex;
-    gap: 23px;
+	display: flex;
+	gap: 23px;
 }
 
 @media screen and (max-width: 1200px) {
-    
-    .menu {
-        gap: 50px;
-    }
+	.menu {
+		gap: 50px;
+	}
 
-    .icon {
-        gap: 18px;
-    }
+	.icon {
+		gap: 18px;
+	}
 }
 
 @media screen and (max-width: 1024px) {
+	.menu {
+		gap: 40px;
+	}
 
-    .menu {
-        gap: 40px;
-    }
-
-    .icon {
-        gap: 13px;
-    }
+	.icon {
+		gap: 13px;
+	}
 }
 
 @media screen and (max-width: 768px) {
-
-    .menu {
-        gap: 10px;
-        width: 160px;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
+	.menu {
+		gap: 10px;
+		width: 160px;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
 }
 
 @media screen and (max-width: 480px) {
+	.menu {
+		gap: 8px;
+		width: 120px;
 
-    .menu {
-        gap: 8px;
-        width: 120px;
-
-        &__link {
-            font-size: 12px;
-        }
-    }
-
-
+		&__link {
+			font-size: 12px;
+		}
+	}
 }

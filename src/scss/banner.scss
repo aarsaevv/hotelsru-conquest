@@ -1,187 +1,207 @@
 .banner {
-    /*  background-image: linear-gradient(to right, #F7F5EF 40%, #FDFDFB 60%); */
-        background-image: url(../assets/images/background-banner-lines.svg);
-        background-repeat: no-repeat;
-        background-position: right;
-        background-color: $color-background-main;
-        height: 520px;
-    
-        &__content {
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            height: 520px;
-        }
-    
-        &__information {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 380px;
-        }
-    }
-    
-    .information-banner {
-    
-        &__header {
-            font-family: $font-header;
-            font-size: 32px;
-            font-weight: 400;
-            color: $color-text-black;
-        }
-    
-        &__description {
-            font-family: $font-main;
-            font-size: 16px;
-            font-weight: 400;
-            margin: 40px 0 0 0;
-            line-height: 150%;
-            color: $color-background-footer;
-            text-align: justify;
-        }
-    
-        &__button {
-            width: 205px;
-            height: 64px;
-            background-color: #D4B098;
-            color: $color-text-white;
-            border: none;
-            font-family: $font-main;
-            font-size: 12px;
-            font-weight: 500;
-            margin: 45px 0 0 0;
-            line-height: 14px;
-            text-transform: uppercase;
-        }
-    }
+	background-image: url(../assets/images/background-banner-lines.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: $color-background-main;
+	height: 520px;
+
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		height: 520px;
+	}
+
+	&__information {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 380px;
+	}
+
+	&__slider {
+		font-family: "Prata";
+		font-size: 12px;
+		display: flex;
+		gap: 20px;
+		justify-content: center;
+	}
+}
+
+.slider {
+	&__arrow {
+		&--left,
+		&--right {
+			width: 10px;
+			height: 15px;
+			background: transparent;
+			border: none;
+			background: url(../assets/images/arrow.svg) no-repeat;
+			background-size: 10px 15px;
+		}
+		&--right {
+			transform: rotate(180deg);
+		}
+	}
+	position: relative;
+	top: -30px;
+	right: 100px;
+}
+
+.information-banner {
+	&__header {
+		font-family: $font-header;
+		font-size: 32px;
+		font-weight: 400;
+		color: $color-text-black;
+	}
+
+	&__description {
+		font-family: $font-main;
+		font-size: 16px;
+		font-weight: 400;
+		margin: 40px 0 0 0;
+		line-height: 150%;
+		color: $color-background-footer;
+		text-align: justify;
+	}
+
+	&__button {
+		width: 205px;
+		height: 64px;
+		background-color: #d4b098;
+		color: $color-text-white;
+		border: none;
+		font-family: $font-main;
+		font-size: 12px;
+		font-weight: 500;
+		margin: 45px 0 0 0;
+		line-height: 14px;
+		text-transform: uppercase;
+	}
+}
 
 @media screen and (max-width: 1200px) {
+	.image-banner {
+		&__watch {
+			width: 420px;
+		}
+	}
 
-    .image-banner {
-
-        &__watch {
-            width: 420px;
-        }
-    }
-
+	.slider {
+		top: -70px;
+	}
 }
 
 @media screen and (max-width: 1024px) {
+	.banner {
+		height: 450px;
 
-    .banner {
-        height: 450px;
+		&__content {
+			justify-content: space-between;
+			height: 450px;
+		}
 
-        &__content {
-            justify-content: space-between;
-            height: 450px;
-        }
+		&__information {
+			width: 320px;
+		}
+	}
 
-        &__information {
-            width: 320px;
-        }
-    }
+	.slider {
+		top: -55px;
+	}
 
-    .image-banner {
+	.image-banner {
+		&__watch {
+			width: 370px;
+		}
+	}
 
-        &__watch {
-            width: 370px;
-        }
-    }
+	.information-banner {
+		&__description {
+			margin: 30px 0 0 0;
+		}
 
-    .information-banner {
-        
-        &__description {
-            margin: 30px 0 0 0;
-        }
-
-        &__button {
-            margin: 35px 0 0 0;
-        }
-    }
-
+		&__button {
+			margin: 35px 0 0 0;
+		}
+	}
 }
 
 @media screen and (max-width: 768px) {
+	.banner {
+		height: 380px;
+		background-image: url(../assets/images/background-banner-lines-small.svg);
+		background-position: 65% 40%;
 
-    .banner {
-        height: 380px;
-        background-image: url(../assets/images/background-banner-lines-small.svg);
-        background-position: 65% 40%;
+		&__content {
+			height: 380px;
+		}
 
-        &__content {
-            height: 380px;
-        }
+		&__information {
+			width: 200px;
+		}
+	}
 
-        &__information {
-            width: 200px;
-        }
-    }
+	.image-banner {
+		&__watch {
+			width: 220px;
+		}
+	}
 
-    .image-banner {
+	.information-banner {
+		&__header {
+			font-size: 25px;
+		}
 
-        &__watch {
-            width: 220px;
-        }
-    }
+		&__description {
+			font-size: 12px;
+			margin: 20px 0 0 0;
+		}
 
-    .information-banner {
-
-        &__header {
-            font-size: 25px;
-        }
-        
-        &__description {
-            font-size: 12px;
-            margin: 20px 0 0 0;
-        }
-
-        &__button {
-            width: 150px;
-            height: 50px;
-            font-size: 11px;
-            margin: 25px 0 0 0;
-        }
-    }
+		&__button {
+			width: 150px;
+			height: 50px;
+			font-size: 11px;
+			margin: 25px 0 0 0;
+		}
+	}
 }
 
 @media screen and (max-width: 480px) {
+	.banner {
+		height: 320px;
 
-    .banner {
-        height: 320px;
+		&__content {
+			height: 320px;
+		}
 
-        &__content {
-            height: 320px;
-        }
+		&__information {
+			width: 160px;
+		}
+	}
 
-        &__information {
-            width: 160px;
-        }
+	.image-banner {
+		&__watch {
+			width: 160px;
+		}
+	}
 
-    }
+	.information-banner {
+		&__header {
+			font-size: 21px;
+		}
 
-    .image-banner {
+		&__description {
+			font-size: 12px;
+			margin: 20px 0 0 0;
+		}
 
-        &__watch {
-            width: 160px;
-        }
-    }
-
-    .information-banner {
-
-        &__header {
-            font-size: 21px;
-        }
-        
-        &__description {
-            font-size: 12px;
-            margin: 20px 0 0 0;
-        }
-
-        &__button {
-            width: 120px;
-            height: 45px;
-            font-size: 10px;
-            margin: 20px 0 0 0;
-        }
-    }
+		&__button {
+			width: 120px;
+			height: 45px;
+			font-size: 10px;
+			margin: 20px 0 0 0;
+		}
+	}
 }

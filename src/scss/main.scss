@@ -1,312 +1,312 @@
 .main {
-    background-color: $color-background-main;
-    background-image: url(../assets/images/ellipse-main-background.svg);
-    background-repeat: no-repeat;
-    background-position: 45% 50%;
-    height: 768px;
+	background-color: $color-background-main;
+	background-image: url(../assets/images/ellipse-main-background.svg);
+	background-repeat: no-repeat;
+	background-position: 45% 50%;
+	height: 768px;
 
-    &__content {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
+	&__content {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
 
-    &__image {
-        display: flex;
-    }
+	&__image {
+		display: flex;
+	}
 }
 
 .information-main {
-    display: flex;
-    flex-direction: column;
-    color: $color-text-black;
-    font-family: $font-header;
-    width: 400px;
+	display: flex;
+	flex-direction: column;
+	color: $color-text-black;
+	font-family: $font-header;
+	width: 400px;
 
-    &__title {
-        width: 343px;
-        height: 48px;
-        font-size: 45px;
-        font-weight: 400;
-        line-height: 60px;
-    }
+	&__title {
+		width: 343px;
+		height: 48px;
+		font-size: 45px;
+		font-weight: 400;
+		line-height: 60px;
+	}
 
-    &__subtitle {
-        width: 154px;
-        height: 31px;
-        font-size: 30px;
-        font-weight: 400;
-        margin: 16px 0 0 0;
-        line-height: 40px;
-    }
+	&__title::before {
+		content: " ";
+		background: #8b8371;
+		width: 50px;
+		height: 1px;
+		right: 72px;
+		top: 36px;
+		display: block;
+		position: relative;
+	}
 
-    &__text {
-        width: 258px;
-        height: 34px;
-        font-family: $font-main;
-        font-size: 14px;
-        font-weight: 300;
-        margin: 39px 0 0 0;
-        line-height: 21px;
-        text-align: justify;
-        color: rgba(27, 26, 23, 0.82);
-    }
+	&__subtitle {
+		width: 154px;
+		height: 31px;
+		font-size: 30px;
+		font-weight: 400;
+		margin: 16px 0 0 0;
+		line-height: 40px;
+	}
 
-    &__button {
-        width: 205px;
-        height: 64px;
-        background-color: $color-background-footer;
-        color: $color-text-white;
-        border: none;
-        font-family: $font-main;
-        font-size: 12px;
-        font-weight: 500;
-        margin: 64px 0 0 0;
-        line-height: 14px;
-        text-transform: uppercase;
-    }
+	&__text {
+		width: 258px;
+		height: 34px;
+		font-family: $font-main;
+		font-size: 14px;
+		font-weight: 300;
+		margin: 39px 0 0 0;
+		line-height: 21px;
+		text-align: justify;
+		color: rgba(27, 26, 23, 0.82);
+	}
+
+	&__button {
+		width: 205px;
+		height: 64px;
+		background-color: $color-background-footer;
+		color: $color-text-white;
+		border: none;
+		font-family: $font-main;
+		font-size: 12px;
+		font-weight: 500;
+		margin: 64px 0 0 0;
+		line-height: 14px;
+		text-transform: uppercase;
+	}
 }
 
 .image-main {
+	&__watch {
+		margin: -11px 0 0 0;
+	}
 
-    &__watch {
-        margin: -11px 0 0 0;
-    }
+	&__price {
+		font-family: $font-additional;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 22px;
+		color: $color-text-black;
+		position: relative;
+		display: inline-block;
+		top: 138px;
+		height: 16px;
+	}
 
-    &__price {
-        font-family: $font-additional;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 22px;
-        color: $color-text-black;
-        position: relative;
-        display: inline-block;
-        top: 138px;
-        height: 16px;
-    }
+	&__price::after {
+		content: " ";
+		background: #8b8371;
+		width: 50px;
+		height: 1px;
+		top: 10px;
+		position: absolute;
+		margin: 0 0 0 15px;
+	}
 
-        &__price::after {
-            content: " ";
-            background: #8B8371;
-            width: 50px;
-            height: 2px;
-            top: 10px;
-            position: absolute;
-            margin: 0 0 0 15px;
-        }
+	&__description {
+		font-family: $font-additional;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 22px;
+		color: $color-text-black;
+		position: relative;
+		display: inline-block;
+		top: 636px;
+		height: 16px;
+	}
 
-    &__description {
-        font-family: $font-additional;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 22px;
-        color: $color-text-black;
-        position: relative;
-        display: inline-block;
-        top: 636px;
-        height: 16px;
-    }
-
-        &__description::before {
-            content: " ";
-            background: #8B8371;
-            width: 50px;
-            height: 2px;
-            top: 10px;
-            right: 115px;
-            position: absolute;
-        }
+	&__description::before {
+		content: " ";
+		background: #8b8371;
+		width: 50px;
+		height: 1px;
+		top: 10px;
+		right: 140px;
+		position: absolute;
+	}
 }
 
 @media screen and (max-width: 1200px) {
+	.main {
+		background-position: 70% 50%;
+	}
 
-    .main {
-        background-position: 70% 50%;
-    }
+	.image-main {
+		&__watch {
+			margin: -11px 0 0 -170px;
+			width: 350px;
+		}
 
-    .image-main {
+		&__price {
+			right: 100px;
+		}
 
-        &__watch {
-            margin: -11px 0 0 -170px;
-            width: 350px;
-        }
-
-        &__price {
-            right: 100px;
-        }
-
-        &__description {
-            left: 70px;
-        }
-    }
+		&__description {
+			left: 70px;
+		}
+	}
 }
 
 @media screen and (max-width: 1024px) {
+	.main {
+		background-position: 60% 50%;
+	}
 
-    .main {
-        background-position: 60% 50%;
-    }
+	.image-main {
+		&__watch {
+			margin: -11px 0 0 -260px;
+			width: 380px;
+		}
 
-    .image-main {
+		&__price {
+			right: 170px;
+		}
 
-        &__watch {
-            margin: -11px 0 0 -260px;
-            width: 380px;
-        }
+		&__price::after {
+			width: 30px;
+		}
 
-        &__price {
-            right: 170px;
-        }
+		&__description {
+			width: 50px;
+			left: 20px;
+		}
 
-            &__price::after {
-                width: 30px;
-            }
+		&__description::before {
+			width: 30px;
+			right: 65px;
+			top: 20px;
+		}
+	}
 
-        &__description {
-            width: 50px;
-            left: 20px;
-        }
+	.information-main {
+		&__title {
+			width: 300px;
+			font-size: 38px;
+		}
 
-            &__description::before {
-                width: 30px;
-                right: 65px;
-                top: 20px;
-            }
-    }
+		&__subtitle {
+			font-size: 28px;
+		}
 
-    .information-main {
-
-        &__title {
-            width: 300px;
-            font-size: 38px;
-        }
-
-        &__subtitle {
-            font-size: 28px;
-        }
-
-        &__button {
-            margin: 54px 0 0 0;
-        }
-
-    }
-
+		&__button {
+			margin: 54px 0 0 0;
+		}
+	}
 }
 
 @media screen and (max-width: 768px) {
+	.main {
+		background-image: url(../assets/images/ellipse-main-background-medium.svg);
+		background-position: 50% 50%;
+		height: 446px;
 
-    .main {
-        background-image: url(../assets/images/ellipse-main-background-medium.svg);
-        background-position: 50% 50%;
-        height: 446px;
+		&__image {
+			margin: 8px 0 0 0;
+			width: 240px;
+			height: 446px;
+		}
+	}
 
-        &__image {
-            margin: 8px 0 0 0;
-            width: 240px;
-            height: 446px;
-        }
-    }
+	.information-main {
+		width: 200px;
 
-    .information-main {
-        width: 200px;
+		&__title {
+			width: 230px;
+			height: 40px;
+			font-size: 30px;
+		}
 
-        &__title {
-            width: 230px;
-            height: 40px;
-            font-size: 30px;
-        }
+		&__title::before {
+			display: none;
+		}
 
-        &__subtitle {
-            font-size: 25px;
-            margin: 5px 0 0 0;
-        }
+		&__subtitle {
+			font-size: 25px;
+			margin: 5px 0 0 0;
+		}
 
-        &__text {
-            width: 200px;
-            height: 60px;
-            font-size: 12px;
-            margin: 15px 0 0 0;
-        }
+		&__text {
+			width: 200px;
+			height: 60px;
+			font-size: 12px;
+			margin: 15px 0 0 0;
+		}
 
-        &__button {
-            width: 150px;
-            height: 50px;
-            font-size: 11px;
-            margin: 25px 0 0 0;
-        }
+		&__button {
+			width: 150px;
+			height: 50px;
+			font-size: 11px;
+			margin: 25px 0 0 0;
+		}
+	}
 
-    }
+	.image-main {
+		&__watch {
+			margin: 0;
+		}
 
-    .image-main {
+		&__watch-main {
+			width: 280px;
+			height: 446px;
+		}
 
-        &__watch {
-            margin: 0;
-        }
+		&__price {
+			display: none;
+		}
 
-        &__watch-main {
-            width: 280px;
-            height: 446px;
-        }
-
-        &__price {
-            display: none;
-        }
-
-        &__description {
-            display: none;
-        }
-    }    
-
+		&__description {
+			display: none;
+		}
+	}
 }
 
 @media screen and (max-width: 480px) {
+	.main {
+		background-image: none;
+		height: 320px;
 
-    .main {
-        background-image: none;
-        height: 320px;
+		&__content {
+			justify-content: space-between;
+			height: 320px;
+		}
 
-        &__content {
-            justify-content: space-between;
-            height: 320px;
-        }
+		&__image {
+			width: 160px;
+			height: 256px;
+		}
+	}
 
-        &__image {
-            width: 160px;
-            height: 256px;
-        }
-    }
+	.information-main {
+		width: 160px;
 
-    .information-main {
-        width: 160px;
+		&__title {
+			width: 190px;
+			font-size: 25px;
+		}
 
-        &__title {
-            width: 190px;
-            font-size: 25px;
-        }
+		&__subtitle {
+			font-size: 21px;
+		}
 
-        &__subtitle {
-            font-size: 21px;
-        }
+		&__text {
+			font-size: 12px;
+			width: 170px;
+		}
 
-        &__text {
-            font-size: 12px;
-            width: 170px;
-        }
+		&__button {
+			width: 120px;
+			height: 45px;
+			font-size: 10px;
+			margin: 20px 0 0 0;
+		}
+	}
 
-        &__button {
-            width: 120px;
-            height: 45px;
-            font-size: 10px;
-            margin: 20px 0 0 0;
-        }
-
-    }
-
-    .image-main {
-
-        &__watch-main {
-            width: 160px;
-            height: 256px;
-        }
-    }
+	.image-main {
+		&__watch-main {
+			width: 160px;
+			height: 256px;
+		}
+	}
 }

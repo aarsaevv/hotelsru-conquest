@@ -1,240 +1,225 @@
 .contacts {
-    height: 631px;
+	height: 631px;
 
-    &__content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 631px;
-    }
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 631px;
+	}
 
-    &__information {
-        display: flex;
-        flex-direction: column;
-        width: 471px;
-        height: 250px;
-    }
+	&__information {
+		display: flex;
+		flex-direction: column;
+		width: 471px;
+		height: 250px;
+	}
 
-    &__image {
-        display: flex;
-        gap: 10px;
-    }
+	&__image {
+		display: flex;
+		gap: 10px;
+	}
 }
 
 .information-contacts {
+	&__header {
+		font-family: $font-header;
+		font-size: 32px;
+		font-weight: 400;
+		color: $color-text-black;
+	}
 
-    &__header {
-        font-family: $font-header;
-        font-size: 32px;
-        font-weight: 400;
-        color: $color-text-black;
-    }
+	&__description {
+		font-family: $font-main;
+		font-size: 16px;
+		font-weight: 400;
+		margin: 40px 0 0 0;
+		line-height: 150%;
+		color: $color-background-footer;
+	}
 
-    &__description {
-        font-family: $font-main;
-        font-size: 16px;
-        font-weight: 400;
-        margin: 40px 0 0 0;
-        line-height: 150%;
-        color: $color-background-footer;
-    }
+	&__description span {
+		font-weight: 600;
+	}
 
-    &__description span {
-        font-weight: 600;
-    }
-
-    &__social {
-        display: flex;
-        align-items: center;
-        gap: 18px;
-        margin-top: auto;
-    }
+	&__social {
+		display: flex;
+		align-items: center;
+		gap: 18px;
+		margin-top: auto;
+	}
 }
 
 .image-contacts {
-
-    &__small {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
+	&__small {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
 }
 
 @media screen and (max-width: 1200px) {
-    .contacts {
+	.contacts {
+		&__image {
+			width: 550px;
+			height: 400px;
+		}
+	}
 
-        &__image {
-            width: 550px;
-            height: 400px;
-        }
-    }
+	.image-contacts {
+		&__right {
+			width: 300px;
+		}
+	}
 
-    .image-contacts {
+	.small-image {
+		&__top {
+			width: 210px;
+			height: 200px;
+		}
 
-        &__right {
-            width: 300px;
-        }
-    }
-
-    .small-image {
-        
-        &__top {
-            width: 210px;
-            height: 200px;
-        }
-
-        &__bottom {
-            width: 210px;
-            height: 200px;
-        }
-    }
+		&__bottom {
+			width: 210px;
+			height: 200px;
+		}
+	}
 }
 
 @media screen and (max-width: 1024px) {
+	.contacts {
+		&__image {
+			width: 450px;
+			height: 300px;
+		}
+	}
 
-    .contacts {
+	.image-contacts {
+		&__right {
+			width: 200px;
+		}
+	}
 
-        &__image {
-            width: 450px;
-            height: 300px;
-        }
-    }
+	.small-image {
+		&__top {
+			width: 160px;
+			height: 145px;
+		}
 
-    .image-contacts {
-
-        &__right {
-            width: 200px;
-        }
-    }
-
-    .small-image {
-        
-        &__top {
-            width: 160px;
-            height: 145px;
-        }
-
-        &__bottom {
-            width: 160px;
-            height: 145px;
-        }
-    }
+		&__bottom {
+			width: 160px;
+			height: 145px;
+		}
+	}
 }
 
 @media screen and (max-width: 768px) {
+	.contacts {
+		height: 380px;
 
-    .contacts {
-        height: 380px;
+		&__content {
+			height: 380px;
+		}
 
-        &__content {
-            height: 380px;
-        }
+		&__information {
+			width: 170px;
+			height: 230px;
+		}
 
-        &__information {
-            width: 170px;
-            height: 230px;
-        }
+		&__image {
+			width: 260px;
+			height: 225px;
+			gap: 5px;
+		}
+	}
 
-        &__image {
-            width: 260px;
-            height: 225px;
-            gap: 5px;
-        }
-    }
+	.image-contacts {
+		&__right {
+			width: 145px;
+		}
+	}
 
-    .image-contacts {
+	.small-image {
+		gap: 5px;
 
-        &__right {
-            width: 145px;
-        }
-    }
+		&__top {
+			width: 110px;
+			height: 110px;
+		}
 
-    .small-image {
-        gap: 5px;
-        
-        &__top {
-            width: 110px;
-            height: 110px;
-        }
+		&__bottom {
+			width: 110px;
+			height: 110px;
+		}
+	}
 
-        &__bottom {
-            width: 110px;
-            height: 110px;
-        }
-    }
+	.information-contacts {
+		&__header {
+			font-size: 25px;
+		}
 
-    .information-contacts {
+		&__description {
+			font-size: 12px;
+			margin: 20px 0 0 0;
+		}
 
-        &__header {
-            font-size: 25px;
-        }
-
-        &__description {
-            font-size: 12px;
-            margin: 20px 0 0 0;
-        }
-
-        &__social {
-            gap: 13px;
-        }
-    }
+		&__social {
+			gap: 13px;
+		}
+	}
 }
 
 @media screen and (max-width: 480px) {
+	.contacts {
+		height: 320px;
 
-    .contacts {
-        height: 320px;
+		&__content {
+			height: 320px;
+		}
 
-        &__content {
-            height: 320px;
-        }
+		&__information {
+			width: 210px;
+			height: 190px;
+		}
 
-        &__information {
-            width: 210px;
-            height: 190px;
-        }
+		&__image {
+			width: 110px;
+			height: 235px;
+			gap: 5px;
+		}
+	}
 
-        &__image {
-            width: 110px;
-            height: 235px;
-            gap: 5px;
-        }
-    }
+	.image-contacts {
+		&__right {
+			display: none;
+		}
+	}
 
-    .image-contacts {
+	.small-image {
+		gap: 5px;
 
-        &__right {
-            display: none;
-        }
-    }
+		&__top {
+			width: 110px;
+			height: 110px;
+		}
 
-    .small-image {
-        gap: 5px;
-        
-        &__top {
-            width: 110px;
-            height: 110px;
-        }
+		&__bottom {
+			width: 110px;
+			height: 110px;
+		}
+	}
 
-        &__bottom {
-            width: 110px;
-            height: 110px;
-        }
-    }
+	.information-contacts {
+		&__header {
+			font-size: 21px;
+		}
 
-    .information-contacts {
+		&__description {
+			font-size: 12px;
+			margin: 20px 0 0 0;
+		}
 
-        &__header {
-            font-size: 21px;
-        }
-
-        &__description {
-            font-size: 12px;
-            margin: 20px 0 0 0;
-        }
-
-        &__social {
-            gap: 13px;
-        }
-    }
+		&__social {
+			gap: 13px;
+		}
+	}
 }

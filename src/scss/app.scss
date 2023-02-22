@@ -1,57 +1,55 @@
-@import 'variables.scss';
-@import 'header.scss';
-@import 'main.scss';
-@import 'models.scss';
-@import 'banner.scss';
-@import 'contacts.scss';
-@import 'footer.scss';
+@import "variables.scss";
+@import "header.scss";
+@import "main.scss";
+@import "models.scss";
+@import "banner.scss";
+@import "contacts.scss";
+@import "footer.scss";
 
 body {
-    font-family: $font-main;
-    font-size: 16px;
+	font-family: $font-main;
+	font-size: 16px;
 }
 
-h1, h2, h3 {
-    margin: 0;
+h1,
+h2,
+h3 {
+	margin: 0;
 }
 
 li {
-    list-style-type: none;
+	list-style-type: none;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 ._container {
-    max-width: 1166px;
-    margin: 0 auto;
+	max-width: 1166px;
+	margin: 0 auto;
 }
 
 @media screen and (max-width: 1200px) {
-
-    ._container {
-        max-width: 960px;
-    }
+	._container {
+		max-width: 960px;
+	}
 }
 
 @media screen and (max-width: 1024px) {
-
-    ._container {
-        max-width: 720px;
-    }
+	._container {
+		max-width: 720px;
+	}
 }
 
 @media screen and (max-width: 768px) {
-
-    ._container {
-        max-width: 440px;
-    }
+	._container {
+		max-width: 440px;
+	}
 }
 
 @media screen and (max-width: 480px) {
-
-    ._container {
-        max-width: 330px;
-    }
+	._container {
+		max-width: 330px;
+	}
 }
